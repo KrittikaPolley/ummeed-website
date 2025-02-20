@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ummeed - Accessible & Health-Integrated Travel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background: #333;
+            padding: 10px;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links a, .sign-in {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav-links a:hover, .sign-in:hover {
+            background-color: #575757;
+        }
+        .search-bar {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h1 {
+            color: black;
+        }
+        .hero p {
+            color: black;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-box {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 20px;
+            margin: 5px;
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-box {
+                width: 80%;
+            }
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Ummeed - Travel Without Limits</header>
+    <nav>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact-info">Contact</a>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <a href="#sign-in" class="sign-in">Sign In</a>
+    </nav>
+    <div class="hero">
+        <h1>Making Travel Inclusive & Health-Conscious</h1>
+        <p>Plan your trip with accessibility, medical support, and comfort in mind.</p>
+    </div>
+    <div class="container">
+        <h2 id="about">About Us</h2>
+        <p>Ummeed is a platform dedicated to providing seamless travel experiences for elderly and disabled individuals. We integrate health-conscious travel planning, medical support, and accessibility-focused services.</p>
+        <h2 id="services">Our Services</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>Accessible Travel</h3>
+                <p>Personalized trip planning for wheelchair users and those with mobility challenges.</p>
+            </div>
+            <div class="service-box">
+                <h3>Medical Support</h3>
+                <p>On-demand caregivers and medical assistance for safe travel.</p>
+            </div>
+            <div class="service-box">
+                <h3>Virtual Travel Therapy</h3>
+                <p>VR travel experiences for those unable to travel physically.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="contact-info">Contact us: <a href="mailto:customer.care@in.ummeed.com" style="color: white;">customer.care@in.ummeed.com</a></p>
+        <p>Follow us on:
+            <span class="social-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </span>
+        </p>
+        <p>&copy; 2025 Ummeed. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
